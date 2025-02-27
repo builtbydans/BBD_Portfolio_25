@@ -4,23 +4,313 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./styles/tailwind.css" rel="stylesheet" />
-    <title>BBD 2025</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="icon"
+      href="https://cdn3.iconfinder.com/data/icons/boxes-12/64/187_box-delivery-package-carton-parcel-08-1024.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Geist+Mono:wght@100..900&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="./script.js"></script>
+    <title>dan | product engineer</title>
   </head>
-  <body class="bg-white dark:bg-gray-950">
-    <main>
-      <h1 class="text-3xl text-red-100 font-bold text-gray-950 dark:text-white">
-        Your new website!
-      </h1>
-      <div
-        class="mx-auto flex max-w-sm items-center gap-x-4 rounded-xl bg-white p-6 shadow-lg outline outline-black/5 dark:bg-slate-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white/10"
-      >
-        <img class="size-12 shrink-0" src="/img/logo.svg" alt="ChitChat Logo" />
-        <div>
-          <div class="text-xl font-medium text-black dark:text-white">
-            ChitChat
+  <body class="bg-white dark:bg-gray-950 min-h-screen">
+    <main
+      class="w-full max-w-7xl mx-auto flex flex-col md:flex-row p-14 md:p-32"
+    >
+      <div class="w-full lg:w-64 p-4 md:fixed">
+        <section>
+          <div class="flex justify-between items-center">
+            <h1
+              id="name"
+              class="text-lg text-gray-950 dark:text-white mb-3 mt-5 md:mt-0"
+            >
+              danish
+            </h1>
+            <button
+              class="text-[10px] text-gray-400 dark:text-gray-600 block md:hidden theme-toggle"
+            >
+              [theme: dark]
+            </button>
           </div>
-          <p class="font-medium">You have a new message!</p>
-        </div>
+          <h3 id="headline" class="text-xs text-gray-950 dark:text-white mb-3">
+            product engineer
+          </h3>
+          <div class="text-xs w-full leading-relaxed">
+            <p class="text-gray-400 dark:text-gray-600 md:hidden">
+              I build end-to-end digital experiences.
+            </p>
+            <p class="text-gray-400 dark:text-gray-600 hidden md:block">
+              I build end-to-end <br />
+              digital experiences.
+            </p>
+            <p style="color: rgb(0, 203, 0)" class="text-xs mt-2 md:mt-5">
+              ﹂available for work
+            </p>
+          </div>
+        </section>
+
+        <nav class="mt-6 flex flex-col space-y-2 hidden md:flex">
+          <a
+            href="#about"
+            class="text-xs text-gray-700 dark:text-gray-300 hover:text-gray-950 dark:hover:text-white transition hover:px-1"
+          >
+            → about
+          </a>
+          <a
+            href="#experience"
+            class="text-xs text-gray-700 dark:text-gray-300 hover:text-gray-950 dark:hover:text-white transition hover:px-1"
+          >
+            → experience
+          </a>
+          <a
+            href="#work"
+            class="text-xs text-gray-700 dark:text-gray-300 hover:text-gray-950 dark:hover:text-white transition hover:px-1"
+          >
+            → work
+          </a>
+          <a
+            href="#library"
+            class="text-xs text-gray-700 dark:text-gray-300 hover:text-gray-950 dark:hover:text-white transition hover:px-1"
+          >
+            → library
+          </a>
+          <a
+            href="#changelog"
+            class="text-xs text-gray-700 dark:text-gray-300 hover:text-gray-950 dark:hover:text-white transition hover:px-1"
+          >
+            → changelog
+          </a>
+        </nav>
+
+        <button
+          class="text-xs text-gray-400 dark:text-gray-600 mt-10 hidden md:block theme-toggle"
+        >
+          [theme: dark]
+        </button>
+      </div>
+
+      <div
+        class="flex-auto bg-white dark:bg-gray-950 p-4 overflow-auto md:ml-64 lg:ml-[30%] xl:ml-[30%] scrollbar-hidden"
+      >
+        <section id="about" class="flex flex-col gap-y-2">
+          <div class="text-xs flex flex-col gap-y-3 leading-relaxed">
+            <p class="text-gray-900 dark:text-white">
+              Hello, i'm Dan (short for Danish, pronounced \ ˈdan-ish).
+            </p>
+            <p class="text-gray-900 dark:text-white">
+              Many developers have a conventional story about how they found
+              their way to software. Unfortunately, my story is a little less
+              clear cut. I started life as a digital advertising analyst,
+              helping blue-chip clients optimise their online ad presence, until
+              I went down a very deep rabbit hole when working with Google on
+              diagnosing page load issues. I found myself enamored in
+              <i>how</i> things were built rather than the why and decided to
+              trade targets for the terminal.
+            </p>
+            <p class="text-gray-900 dark:text-white">
+              I'm obsessed with the look and feel of a product and needing to
+              build pixel-perfect user experiences from tested design. I
+              meticulously analyse data-driven development from
+              design-to-component for both usability and functionality, not
+              shying away from either Figma or the console if required. Code and
+              creativity go hand in hand for me and I produce my best work on
+              platforms that champion this thinking.
+            </p>
+            <p class="text-gray-900 dark:text-white">
+              At present, I am at Equitas - a video interviewing platform
+              leveraging AI to create inclusive interview experiences. I'm
+              helping shape the frontend from the ground up. From establishing
+              the design system, building UI components or tackling UX concerns,
+              I regularly switch between being both developer and designer,
+              rebuilding the platform to offer a polished end-to-end experience.
+              Concurrently, I am undertaking a part-time MSc in Software
+              Development at Queen's University, with a focus on Java-based
+              software system design.
+            </p>
+          </div>
+        </section>
+
+        <section id="experience" class="flex flex-col gap-y-2 pt-10">
+          <h2 class="text-xs font-semibold text-gray-500">experience</h2>
+          <div class="pl-3 md:pl-3 mt-2 text-white w-full">
+            <p class="text-gray-400 text-xs">2023 — Present</p>
+            <a
+              href="https://equitas.ai"
+              target="_blank"
+              class="block hover:underline"
+            >
+              <h2
+                class="text-gray-900 dark:text-white text-xs mt-1 flex items-center"
+              >
+                Frontend Software Developer - Equitas AI
+              </h2>
+            </a>
+            <p class="text-gray-500 text-xs mt-2">
+              Built the frontend platform from the ground up, developing custom
+              UI components on top of MUI. Collaborated closely with the CTO and
+              Product Team to refine existing functionality, enhancing usability
+              for clients.
+            </p>
+            <div class="flex flex-wrap gap-2 mt-4">
+              <span
+                class="bg-gray-200 text-gray-500 text-xs px-3 py-1 rounded-full dark:bg-gray-800"
+                >JavaScript</span
+              >
+              <span
+                class="bg-gray-200 text-gray-500 text-xs px-3 py-1 rounded-full dark:bg-gray-800"
+                >Next.js</span
+              >
+              <span
+                class="bg-gray-200 text-gray-500 text-xs px-3 py-1 rounded-full dark:bg-gray-800"
+                >React.js</span
+              >
+              <span
+                class="bg-gray-200 text-gray-500 text-xs px-3 py-1 rounded-full dark:bg-gray-800"
+                >MUI</span
+              >
+              <span
+                class="bg-gray-200 text-gray-500 text-xs px-3 py-1 rounded-full dark:bg-gray-800"
+                >Prisma</span
+              >
+              <span
+                class="bg-gray-200 text-gray-500 text-xs px-3 py-1 rounded-full dark:bg-gray-800"
+                >Figma</span
+              >
+            </div>
+          </div>
+
+          <div class="pl-3 md:pl-3 text-white w-full mt-10">
+            <p class="text-gray-400 text-xs">2022 — 2024</p>
+            <a
+              href="https://surge.co.uk"
+              target="_blank"
+              class="block hover:underline"
+            >
+              <h2
+                class="text-gray-900 dark:text-white text-xs mt-1 flex items-center"
+              >
+                Technical Support Developer - Surge
+              </h2>
+            </a>
+            <p class="text-gray-500 text-xs mt-2">
+              Contributed to the Technical Support team in a niche hybrid role,
+              conducting first-hand user experience research and serving as the
+              bridge between a development agency. Developed internal web
+              management systems to streamline administrative processes.
+            </p>
+            <div class="flex flex-wrap gap-2 mt-4">
+              <span
+                class="bg-gray-200 text-gray-500 text-xs px-3 py-1 rounded-full dark:bg-gray-800"
+                >JavaScript</span
+              >
+              <span
+                class="bg-gray-200 text-gray-500 text-xs px-3 py-1 rounded-full dark:bg-gray-800"
+                >HTML5</span
+              >
+              <span
+                class="bg-gray-200 text-gray-500 text-xs px-3 py-1 rounded-full dark:bg-gray-800"
+                >CSS3</span
+              >
+              <span
+                class="bg-gray-200 text-gray-500 text-xs px-3 py-1 rounded-full dark:bg-gray-800"
+                >HubSpot</span
+              >
+            </div>
+          </div>
+
+          <div class="pl-3 md:pl-3 text-white w-full mt-10">
+            <p class="text-gray-400 text-xs">2021 — Present</p>
+            <a
+              href="https://solved.design/"
+              target="_blank"
+              class="block hover:underline"
+            >
+              <h2
+                class="text-gray-900 dark:text-white text-xs mt-1 flex items-center"
+              >
+                Product Buildability Advisor - Solved
+              </h2>
+            </a>
+            <p class="text-gray-500 text-xs mt-2">
+              Worked alongside an established Lead Product Designer as a
+              buildability advisor, stress-testing high-fidelity designs in
+              React using Bootstrap and Tailwind. Rapidly developed and
+              validated components during the discovery and ideation phases.
+            </p>
+            <div class="flex flex-wrap gap-2 mt-4">
+              <span
+                class="bg-gray-200 text-gray-500 text-xs px-3 py-1 rounded-full dark:bg-gray-800"
+                >JavaScript</span
+              >
+              <span
+                class="bg-gray-200 text-gray-500 text-xs px-3 py-1 rounded-full dark:bg-gray-800"
+                >React.js</span
+              >
+              <span
+                class="bg-gray-200 text-gray-500 text-xs px-3 py-1 rounded-full dark:bg-gray-800"
+                >Tailwind</span
+              >
+              <span
+                class="bg-gray-200 text-gray-500 text-xs px-3 py-1 rounded-full dark:bg-gray-800"
+                >Bootstrap</span
+              >
+              <span
+                class="bg-gray-200 text-gray-500 text-xs px-3 py-1 rounded-full dark:bg-gray-800"
+                >Storybook</span
+              >
+            </div>
+          </div>
+
+          <div class="pl-3 md:pl-3 text-white w-full mt-10">
+            <p class="text-gray-400 text-xs">2020 — 2021</p>
+            <a
+              href="https://newscorp.com"
+              target="_blank"
+              class="block hover:underline"
+            >
+              <h2
+                class="text-gray-900 dark:text-white text-xs mt-1 flex items-center"
+              >
+                Software Engineering Intern - News Corp
+              </h2>
+            </a>
+            <p class="text-gray-500 text-xs mt-2">
+              Contributed to the Web Components team for The Times publisher,
+              primarily creating placeholder components for ad spaces and
+              collaborating with QA to test staging servers.
+            </p>
+            <div class="flex flex-wrap gap-2 mt-4">
+              <span
+                class="bg-gray-200 text-gray-500 text-xs px-3 py-1 rounded-full dark:bg-gray-800"
+                >JavaScript</span
+              >
+              <span
+                class="bg-gray-200 text-gray-500 text-xs px-3 py-1 rounded-full dark:bg-gray-800"
+                >React</span
+              >
+            </div>
+          </div>
+        </section>
+        <section id="work" class="flex flex-col gap-y-2 mt-10">
+          <h2 class="text-xs font-semibold text-gray-500">work</h2>
+          <p class="pl-3 text-gray-700 text-muted text-xs">tbc</p>
+        </section>
+        <section id="library" class="flex flex-col gap-y-2 mt-10">
+          <h2 class="text-xs font-semibold text-gray-500">library</h2>
+          <p class="pl-3 text-gray-700 text-muted text-xs">tbc</p>
+        </section>
+
+        <section id="changelog" class="flex flex-col mt-10">
+          <h2 class="text-xs font-semibold text-gray-500">changelog</h2>
+          <p class="pl-3 text-xs text-muted text-gray-700 mt-2">
+            ﹂27.02.25 - v1.0.0: Built with a Web 1.0 stack and some Tailwind
+            magic. Deployed on Vercel.
+          </p>
+        </section>
       </div>
     </main>
   </body>

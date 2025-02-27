@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Geist Mono", serif;
+}
